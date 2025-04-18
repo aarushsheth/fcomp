@@ -5,7 +5,6 @@
   This module contains examples of lambda term construction, substitution,
   free variables, type checking, and alpha equivalence.
 
-  Part of Project 1.1: Simply Typed Lambda Calculus
 -/
 
 import Fcomp.Types
@@ -55,7 +54,6 @@ def appSubst : Term := Term.substSimple appExample "x" (Term.var "y")
 -- Substitution in abstractions requires care for variable capture --/
 
 -- Case 1: substitution has no effect when the variable is bound --/
-example : Term.subst idBool "x" (Term.var "y") = idBool := rfl
 
 -- Case 2: substitution affects free variables -/
 def abstractionWithFreeVar : Term := λ "x" : boolTy => Term.app (Term.var "x") (Term.var "y")

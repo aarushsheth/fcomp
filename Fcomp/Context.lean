@@ -6,7 +6,6 @@
   A context is a list of variable-type pairs, with the most recently
   added bindings appearing first in the list.
 
-  Part of Project 1.1: Simply Typed Lambda Calculus
 -/
 
 import Fcomp.Types
